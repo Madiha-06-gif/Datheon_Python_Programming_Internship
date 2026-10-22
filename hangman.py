@@ -2,8 +2,14 @@
 
 import random
 
-WORDS = ["python", "coding", "laptop", "developer", "program"]
-
+with open("words.txt", "r", encoding="utf-8") as file:
+    WORDS = [
+        word.strip().lower()
+        for word in file
+        if word.strip().isalpha()
+    ]
+if not WORDS:
+    raise ValueError("words.txt does not contain any valid words.")
 HANGMAN_ART = [
     """
      +---+
