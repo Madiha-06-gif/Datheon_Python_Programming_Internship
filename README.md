@@ -61,3 +61,33 @@ python portfolio.py
 
 ## Author
 Madiha
+
+## Task 3: Desktop File Organizer
+
+**Description:**
+
+Developed a Python utility to automatically organize files into categorized folders based on their file extensions.
+
+**Features:**
+- Automatically detects file extensions.
+- Creates Documents, Images, Videos, Archives, and Code folders.
+- Moves files into their appropriate folders.
+- Prevents overwriting files with duplicate names.
+- Handles permission and operating-system errors.
+- Skips unsupported file types.
+- Generates execution summaries.
+- Records file movements and errors using Python logging.
+
+**Technologies Used:**
+- Python
+- os
+- shutil
+- pathlib
+- logging
+
+**How to Run:**
+```bash
+python organizer.py
+```
+
+**Output:** Organized files are placed into category folders, and activity is recorded in `organizer.log`.
