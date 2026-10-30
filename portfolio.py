@@ -1,5 +1,18 @@
-<
+
 import csv
+def load_valid_tickers():
+    valid_tickers = set()
+
+    with open("constituents.csv", "r", encoding="utf-8-sig") as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            valid_tickers.add(row["Symbol"].strip().upper())
+
+    return valid_tickers
+
+
+valid_tickers = load_valid_tickers()
 
 portfolio = {}
 
@@ -11,6 +24,9 @@ while True:
 
     if not ticker:
         print("Ticker cannot be empty.")
+        continue
+    if ticker not in valid_tickers:
+        print("Invalid ticker. Please enter an S&P 500 company symbol.")
         continue
 
     if ticker in portfolio:

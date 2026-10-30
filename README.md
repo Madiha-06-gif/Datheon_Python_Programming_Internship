@@ -26,7 +26,10 @@ Python loops, conditional statements, sets, strings, functions, user input, and 
 
 ## Task 2: Investment Portfolio Tracker
 
-A Python program that calculates investment values and profit or loss for stock holdings.
+Additional Feature:
+- Uses the S&P 500 company dataset (constituents.csv).
+- Validates stock ticker symbols before accepting transactions.
+- Current stock prices are entered manually.
 
 ### Features
 - Enter stock ticker symbols, buy prices, share quantities, and current prices
@@ -48,7 +51,6 @@ python portfolio.py
 - Input validation
 - File handling
 - CSV module
-- Random module
 
 ## Project Files
 - `hangman.py` — Hangman game logic
