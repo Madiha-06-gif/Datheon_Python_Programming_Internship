@@ -53,11 +53,16 @@ python portfolio.py
 - CSV module
 
 ## Project Files
-- `hangman.py` — Hangman game logic
-- `words.txt` — Word list
-- `portfolio.py` — Portfolio tracker
-- `portfolio_summary.csv` — Portfolio summary
-- `README.md` — Project documentation
+
+- hangman.py – Hangman game
+- words.txt – Hangman word list
+- portfolio.py – Investment portfolio tracker
+- constituents.csv – Stock ticker dataset
+- portfolio_summary.csv – Portfolio results
+- organizer.py – Desktop file organizer
+- chatbot.py – Customer support chatbot
+- sample_faq.json – Chatbot FAQ dataset
+- README.md – Project documentation
 
 ## Author
 Madiha
