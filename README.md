@@ -91,3 +91,44 @@ python organizer.py
 ```
 
 **Output:** Organized files are placed into category folders, and activity is recorded in `organizer.log`.
+
+## Task 4: Rule-Based Customer Support Chatbot
+
+### Description
+A Python-based interactive chatbot that answers frequently asked customer-support questions using keyword matching and regular expressions.
+
+### Features
+- Greeting detection
+- Business-hours information
+- Internship project submission guidance
+- Certificate information
+- Multiple-intent matching
+- Fallback responses for unknown questions
+- Empty-input handling
+- Clean exit using bye, exit, or quit
+- FAQ data loaded from a JSON file
+- Error handling for missing or invalid FAQ files
+
+### Technologies Used
+- Python 3
+- JSON
+- Regular Expressions (`re`)
+- pathlib
+
+### Files
+- `chatbot.py` – Main chatbot application
+- `sample_faq.json` – FAQ dataset
+
+### How to Run
+```bash
+python chatbot.py
+```
+
+### Example
+```text
+You: hello
+Bot: Hello! Welcome to customer support. How can I help you?
+
+You: bye
+Bot: Thank you for chatting. Goodbye!
+```
