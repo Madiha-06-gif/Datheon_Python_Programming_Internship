@@ -1,3 +1,4 @@
+<
 # Datheon Python Programming Internship
 
 This repository contains projects completed as part of my Datheon Python Programming Internship.
@@ -8,14 +9,20 @@ A command-line game where the player guesses a hidden word one letter at a time.
 
 ### Features
 - Random word selection from `words.txt`
-- Limited incorrect attempts
-- Input validation
-- Win and lose conditions
+- Six incorrect attempts allowed
+- Displays Hangman drawings
+- Tracks guessed letters
+- Prevents repeated guesses from reducing attempts
+- Validates user input
+- Displays win and lose messages
 
 ### Run the program
 ```bash
 python hangman.py
 ```
+
+### What I Learned
+Python loops, conditional statements, sets, strings, functions, user input, and file handling.
 
 ## Task 2: Investment Portfolio Tracker
 
@@ -23,8 +30,9 @@ A Python program that calculates investment values and profit or loss for stock 
 
 ### Features
 - Enter stock ticker symbols, buy prices, share quantities, and current prices
-- Calculate invested amount and current value
-- Calculate profit/loss and percentage gain/loss
+- Calculate total invested amount
+- Calculate current portfolio value
+- Calculate profit or loss and percentage gain or loss
 - Save results to a CSV file
 
 ### Run the program
@@ -35,11 +43,19 @@ python portfolio.py
 **Note:** Current stock prices are entered manually.
 
 ## Technologies Used
-- Python
+- Python 3
 - Dictionaries and loops
 - Input validation
 - File handling
 - CSV module
+- Random module
+
+## Project Files
+- `hangman.py` — Hangman game logic
+- `words.txt` — Word list
+- `portfolio.py` — Portfolio tracker
+- `portfolio_summary.csv` — Portfolio summary
+- `README.md` — Project documentation
 
 ## Author
 Madiha

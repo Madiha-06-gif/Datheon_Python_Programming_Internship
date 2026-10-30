@@ -1,5 +1,4 @@
 
-
 import random
 
 with open("words.txt", "r", encoding="utf-8") as file:
@@ -8,8 +7,10 @@ with open("words.txt", "r", encoding="utf-8") as file:
         for word in file
         if word.strip().isalpha()
     ]
+
 if not WORDS:
     raise ValueError("words.txt does not contain any valid words.")
+
 HANGMAN_ART = [
     """
      +---+
@@ -62,7 +63,6 @@ HANGMAN_ART = [
     """
 ]
 
-
 secret_word = random.choice(WORDS)
 guessed_letters = set()
 wrong_guesses = set()
@@ -79,6 +79,7 @@ while len(wrong_guesses) < max_attempts:
             display_word += letter.upper() + " "
         else:
             display_word += "_ "
+
     print(HANGMAN_ART[len(wrong_guesses)])
     print("\nWord:", display_word)
     print("Incorrect guesses left:", max_attempts - len(wrong_guesses))

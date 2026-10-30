@@ -1,4 +1,4 @@
-
+<
 import csv
 
 portfolio = {}
@@ -48,14 +48,8 @@ with open("portfolio_summary.csv", "w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
 
     writer.writerow([
-        "Ticker",
-        "Buy Price",
-        "Quantity",
-        "Current Price",
-        "Invested Amount",
-        "Current Value",
-        "Profit/Loss",
-        "Gain/Loss (%)"
+        "Ticker", "Buy Price", "Quantity", "Current Price",
+        "Invested Amount", "Current Value", "Profit/Loss", "Gain/Loss (%)"
     ])
 
     for ticker, details in portfolio.items():
@@ -74,13 +68,9 @@ with open("portfolio_summary.csv", "w", newline="", encoding="utf-8") as file:
         print(f"Gain/Loss: {percentage:.2f}%")
 
         writer.writerow([
-            ticker,
-            details["buy_price"],
-            details["quantity"],
-            details["current_price"],
-            round(invested, 2),
-            round(current_value, 2),
-            round(profit_loss, 2),
+            ticker, details["buy_price"], details["quantity"],
+            details["current_price"], round(invested, 2),
+            round(current_value, 2), round(profit_loss, 2),
             round(percentage, 2)
         ])
 
